@@ -1,6 +1,4 @@
-from __future__ import annotations
 from abc import abstractmethod
-
 from functools import wraps
 from typing import (
     Callable,
@@ -9,6 +7,7 @@ from typing import (
     TypeVar,
     cast,
 )
+
 
 P = ParamSpec("P")
 R = TypeVar("R", covariant=True)
