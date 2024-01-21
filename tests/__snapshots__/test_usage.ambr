@@ -1,0 +1,81 @@
+# serializer version: 1
+# name: test_limit_offset
+  list([
+    dict({
+      'title': 'The Matrix',
+      'year': 1999,
+    }),
+    dict({
+      'title': 'The Shawshank Redemption',
+      'year': 1994,
+    }),
+    dict({
+      'title': 'The Wolf of Wall Street',
+      'year': 2013,
+    }),
+  ])
+# ---
+# name: test_limit_offset_order
+  list([
+    dict({
+      'title': 'The Hunger Games',
+      'year': 2012,
+    }),
+    dict({
+      'title': 'The Godfather',
+      'year': 1972,
+    }),
+    dict({
+      'title': 'The Dark Knight',
+      'year': 2008,
+    }),
+  ])
+# ---
+# name: test_limit_order
+  list([
+    dict({
+      'title': 'The Wolf of Wall Street',
+      'year': 2013,
+    }),
+    dict({
+      'title': 'The Shawshank Redemption',
+      'year': 1994,
+    }),
+    dict({
+      'title': 'The Matrix',
+      'year': 1999,
+    }),
+    dict({
+      'title': 'The Martian',
+      'year': 2015,
+    }),
+    dict({
+      'title': 'The Lord of the Rings: The Fellowship of the Ring',
+      'year': 2001,
+    }),
+  ])
+# ---
+# name: test_nokwargs
+  list([
+    dict({
+      'title': 'The Dark Knight',
+      'year': 2008,
+    }),
+    dict({
+      'title': 'The Godfather',
+      'year': 1972,
+    }),
+    dict({
+      'title': 'The Hunger Games',
+      'year': 2012,
+    }),
+    dict({
+      'title': 'The Lord of the Rings: The Fellowship of the Ring',
+      'year': 2001,
+    }),
+    dict({
+      'title': 'The Martian',
+      'year': 2015,
+    }),
+  ])
+# ---

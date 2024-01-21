@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "unpack-kwtypes"
+version = "0.1.0"
+description = "Reproduction of a mypy issue preventing TypedDicts from being attached to function attributes"
+authors = ["Zev Isert <zevisert@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{ include = "unpack_kwtypes", from = "src" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.8.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.4.4"
+pytest-asyncio = "^0.23.3"
+syrupy = "^4.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
